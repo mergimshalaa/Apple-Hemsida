@@ -7,4 +7,4 @@ We chose to screenshot the images directly from apple's own website, which resul
 
 Created by: Mergim Shala & Lucas Alfredsson
 
-Github Pages: [Click here](https://github.com/mergimshalaa/Apple-Hemsida)
+Github Pages: [Click here](https://mergimshalaa.github.io/Apple-Hemsida/)
