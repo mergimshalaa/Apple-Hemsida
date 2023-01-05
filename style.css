@@ -1,0 +1,215 @@
+/*Universal-tecken för att sätta en padding och margin 0 på hela sidan*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Styleat våran header utifrån apples hemsidan med storlek, färg, positionering samt bakgrundsfärg*/
+header{
+    background-color: black;
+    opacity: 0.8;
+    font-size: small;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+}
+
+/*Detta är listan i headern där vi sätt in padding (top och left) för att definera avstånd mellan rubrikerna i headern*/
+.li1, i {
+    padding-left: 3.3%;
+    padding-top: 15px;
+    font-size: 12px;
+    }
+
+/* Även här är css för att postionera rubrikerna i headern samt dekorer och ge dem en färg*/
+.header {
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.a1 {
+    text-decoration: none;
+    color: #f5f5f7cb;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*Här positionerade vi första bakgrundsbild, samt ställt in så att bilder tar upp 100% av hemsidans bredd och centrerat bilden. Samma gäller för bild2, bild3 */
+.bild1 {
+    width: 100%;
+    background-image: url("/Images/bild1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bild2 {
+    width: 100%;
+    background-image: url("/Images/bild2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+.bild3 {
+    width: 100%;
+    background-image: url("/Images/bild3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Detta är en gemensam klass för bilder, bilder2, bilder3 för att dem har samma upplägg 2 st bakgrundsbilder som ska täcka 100vh samt ha ett avstånd mellan varandra*/
+.container { 
+    height: 100vh;
+    padding-bottom: 1.5%;
+    padding-top: 0.5%;
+}
+
+/*Detta är posistionering och storleken för bilderna som ligger inuti container och för att få avstånd mellan bilder la vi background-size 49.7, 49.7 vilket lämnar ett mellanrum på 0.6% det gäller även för bilder2 och bilder 3*/
+.bilder {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/Images/bild4.png"), url("/Images/bild5.png");
+    background-position: top left, top right;
+    background-size: 49.7%, 49.7%;
+    background-repeat: no-repeat;
+}
+
+.bilder2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/Images/bild6.png"), url("/Images/bild7.png");
+    background-position: top left, top right;
+    background-size: 49.7%, 49.7%;
+    background-repeat: no-repeat;
+}
+
+.bilder3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Images/bild8.png"), url("/Images/bild9.png");
+    background-position: top left, top right;
+    background-size: 49.7%, 49.7%;
+    background-repeat: no-repeat;
+}
+
+/*Här är footern ställd in i display flex där vi posiitonera det och även satte in en färg i bakgrunden*/
+.footer {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    background-color:#f5f5f7;
+    margin-top:0.6rem;
+}
+
+/*Här är positioneringen och även styling för informationen som ligger i början på footern.*/    
+.info {
+    width: 50%; 
+    margin-top: 2rem;
+    color: black;
+    text-align: left;
+}
+
+/*Detta är stylingen för alla fem kolumner som finns i footern.*/
+.kolumner5 {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0;
+    text-align: left;
+}
+
+/* Detta är styling för all text i footer där vi ha bytt font samt lagt till opacity för att efterlikna apple och mellanrum och så*/
+p,li, .nummer{
+    list-style-type: none;
+    opacity: 0.6;
+    font-size: 12.5px;
+    padding-top: 9px;
+    margin: 1;
+    font-family: 'Amiri Quran', serif;
+    font-family: 'Bungee Spice';
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+ 
+.li-tag {
+    padding-bottom: 10px;
+}
+
+.hr {
+    opacity: 0.8;
+}
+/*Stylingen för alla h3or i footern*/
+h3 {
+    font-family: 'Amiri Quran', serif;
+    font-family: 'Bungee Spice';
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 5px;
+}
+
+/*Här positionera vi denna klass för att förflytta den till vänster samt "sudda" ut färgen*/
+.p-tag {
+    text-align: left;
+    opacity: 0.5;
+
+}
+
+/* Här har vi lagt ett avstånd, positionerat det med display flex och fixat avståndet under diven*/
+.p-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/*Avståndet till hr2-linje som ligger nederst i footern*/
+.hr2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*Här har vi ställt in olika font samt positionerat det med flex*/
+.number {
+    display: flex;
+    opacity: 0.9;
+    font-family: 'Amiri Quran', serif;
+    font-family: 'Bungee Spice';
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 12px;
+}
+
+.h4-tag {
+   color: #f5f5f7;
+}
+
+.h4 {
+    color: black;
+}
+.nummer {
+    padding-top:9px;
+}
+
+#plus{
+    color: black;
+    float: right;
+    padding-right: 13px;
+}
