@@ -5,8 +5,265 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Website</title>
+    <link rel="stylesheet" href="/Kod/main.css">
+    <link rel="stylesheet" href="/Kod/media.css">
+    <script src="https://kit.fontawesome.com/5e34bdfab1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a88fc498e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!--Här skapade vi vår header-tag där vi valt att ha en ul-lista inuti nav-tagen-->
+    <header>
+        <nav>
+            <ul class="header">
+
+                <!--Inuti listan länkade vi in alla li-tagar så de blev tryckbara-->
+                <i class="fa-solid fa-grip-lines" id="dropdown"></i>
+                <i class="fa-brands fa-apple"><a href="#"></a></i>
+                <li class="li1"><a href="#" class="a1">Butik</a></li>
+                <li class="li1"><a href="#" class="a1">Mac</a></li>
+                <li class="li1"><a href="#" class="a1">iPad</a></li>
+                <li class="li1"><a href="#" class="a1">iPhone</a></li>
+                <li class="li1"><a href="#" class="a1">Watch</a></li>
+                <li class="li1"><a href="#" class="a1">AirPods</a></li>
+                <li class="li1"><a href="#" class="a1">TV och hem</a></li>
+                <li class="li1"><a href="#" class="a1">Bara oss Apple</a></li>
+                <li class="li1"><a href="#" class="a1">Tillbehör</a></li>
+                <li class="li1"><a href="#" class="a1">Support</a></li>
+                <i class="fa-solid fa-magnifying-glass" id="search"><a href="#"></a></i>
+                <i class="fa-solid fa-bag-shopping"><a href="#"></a></i>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Vi har gjort en div som heter bakgrundsbilderna1 där vi lagt in bilder som bakgrundsbilder och posistionerat i css-->
+<div class="bakgrundsbilderna1">
     
+    <div class="bild1"></div> 
+    <div class="bild2"></div>
+    <div class="bild3"></div>
+    
+    <div class="container">
+        <div class="bilder"></div>
+    </div>
+
+    <div class="container">
+        <div class="bilder2"></div>
+    </div>
+
+    <div class="container">
+        <div class="bilder3"></div>
+    </div>
+</div>
+
+<!--Den är identiskt till våran första class men innehåller en annan css så med hjälp media queryes så försvinner bakgrundsbilderna 1 och bakgrundsbilder 2 vissas så att den ska agera responsiv-->
+<div class="bakgrundsbilderna2">
+    <div class="bild1"></div>
+    <div class="bild2"></div>
+    <div class="bild3"></div>
+<div class="container">
+    <div class="bilder"></div>
+</div>
+
+<div class="container">
+    <div class="bilder2"></div>
+</div>
+
+<div class="container">
+    <div class="bilder3"></div>
+</div>
+</div>
+
+<!-- Det här är våran footer som är indelade i olika klasser-->
+    <div class="footer"> 
+
+                <!--klassen info har vi lagt div för siffror samt p-taggar som innehåller information så som på hemsidan-->
+                <div class="info">
+                    <p><div class="number"> 
+                    <div class="nummer">1.</div>
+                </p>
+                    <p>Behöriga kunder får ett Apple Gift Card när de köper en Mac eller iPad som ingår i kampanjen 
+                    från ett godkänt inköpsställe. Erbjudandet gäller endast en kampanjvara per Mac eller iPad som 
+                    ingår i kampanjen och per behörig kund. Erbjudandet gäller i mån av tillgänglighet. Så långt 
+                    lagret räcker. De fullständiga villkoren för erbjudandet finns att läsa här.
+                    </p>
+                </div>
+                
+                <p ><div class="number">
+                    <div class="nummer">2.</div>
+                </p>
+                    <p>59 kr/månad efter den kostnadsfria provperioden. Endast ett erbjudande per Apple-ID och per 
+                    familj om du ingår i en familjedelningsgrupp. Detta gäller oavsett hur många enheter du eller 
+                    familjen köper. Erbjudandet gäller inte om du eller din familj redan har använt ett erbjudande
+                    om Apple TV+ gratis i ett år. Erbjudandet gäller i tre månader efter att en enhet som ingår i 
+                    kampanjen har aktiverats. Abonnemanget förnyas auto­matiskt tills det sägs upp. Begränsningar 
+                    och andra villkor gäller.
+                    </p>
+                </div>
+                    <br>
+                    <hr class="hr">
+
+                    <!--Här har vi lagt en klass för våra 5 kolumner så vi kan lägga display:flex på klassen men också få varje rad att vara inline-->
+                <nav class="kolumner5">
+                <div>  
+                    <div class="h4-tag">12
+                    <h5 class="h4">Handla och läs mer</h5>
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn"> 
+
+                        <!-- En tydlig lista som ligger i en div som beskriver första kolumnen i själva footern-->
+                        <ul> 
+                            <li>Butik</li>
+                            <li>Mac</li>
+                            <li>iPad</li>
+                            <li>iPhone</li>
+                            <li>Watch</li>
+                            <li>AirPods</li>
+                            <li>Tv och hem</li>
+                            <li>AirTag</li>
+                            <li>Tillbehör</li>
+                            <li>Presentkort</li>
+                        </ul>
+                </div>
+                
+                <div>
+                    <div class="h4-tag">12
+
+                    <!--Vi har valt att lägga h5or som rubriker i själva kolumnerna-->
+                    <h5 class="h4">Services</h5> 
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn">
+
+                        <ul> <!-- Här ligger det en lista i andra kolumnen i en div-->
+                            <li>Apple Music</li>
+                            <li>Apple TV+</li>
+                            <li>Apple Arcade</li>
+                            <li>iCloud</li>
+                            <li>Apple One</li>
+                            <li>Apple Pay</li>
+                            <li>App Store</li>
+                        </ul>
+                        
+                    <div class="h4-tag">12
+                    <h5 class="h4">Konto</h5>
+                    <i class="fa-solid fa-plus" id="plus"></i> 
+                    
+                    </div>
+                    <hr class="hr-kolumn"> 
+                        <ul> 
+                            <li>Hanterna ditt Apple-ID</li>
+                            <li>Apple Store-konto</li>
+                            <li>iCloud.com</li>
+                        </ul>
+                </div>
+                
+                <div>
+                    <div class="h4-tag">12
+                    <h5 class="h4">Apple Store</h5>
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn">
+
+                        <!-- Tredje listan i kolumnen i själva diven-->
+                        <ul> 
+                            <li>Hitta en butik</li>
+                            <li>Genius Bar</li>
+                            <li>Today at Apple</li>
+                            <li>Apples sommarläger</li>
+                            <li>Apple Store-appen</li>
+                            <li>Apple Trade In</li>
+                            <li>Beställningsstatus</li>
+                            <li>Hjälp med att handla</li>
+                        </ul>
+                </div>
+
+                <div>  
+                    <div class="h4-tag">12
+                    <h5 class="h4">För företag</h5>
+                   <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn">
+                    <!--Fjärde kolumnen med lista inuti diven-->    
+                        <ul> 
+                            <li>Apple och företag</li>
+                            <li>Handla till företaget</li>
+                        </ul>
+                        
+                    <div class="h4-tag">12
+                    <h5 class="h4">För utbildning</h5>
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn">
+                        <ul>
+                            <li>Apple i utbildningen</li>
+                            <li>Handla till studierna</li>
+                        </ul>
+                    <div class="h4-tag">12
+                    <h5 class="h4">För sjukvården</h5>
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn">
+                        <ul>
+                            <li>Apple i sjukvården</li>
+                            <li>Apple Watch och hälsa</li>
+                        </ul>
+                </div>
+
+                <div>
+                    <div class="h4-tag">12
+                    <h5 class="h4">Apples värderingar</h5>
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn">
+
+                         <!--Här liggen den sista listan i den sista kolumnen i diven-->
+                        <ul> 
+                            <li>Miljön</li>
+                            <li>Personlig integritet</li>
+                            <li>Leverantörsansvar</li>
+                        </ul>
+
+                    <div class="h4-tag">12
+                    <h5 class="h4">Om Apple</h5>
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    </div>
+                    <hr class="hr-kolumn">
+                        <ul>
+                            <li>Newsroom</li>
+                            <li>Apples ledning</li>
+                            <li>Karriärmöjligheter</li>
+                            <li>Garanti</li>
+                            <li>Investerare</li>
+                            <li>Etik och efterlevnad av lagar</li>
+                            <li>Event</li>
+                            <li>Nya arbetstillfällen i Europa</li>
+                            <li>Kontakta Apple</li>
+                        </ul>
+                </div>
+            </nav>
+
+            <!--Detta är en p tag som vi har fyllt med två a taggar för att få den blå texten samt att vi har länkat den till # för att få en illution av att den går att klicka men finns egentligen ingen funktionalltiet-->
+        <p class="p-tag">Fler sätt att handla: <a href="#">Hitta en Apple Store</a> eller <a href="#">annan återförsäljare</a> i närheten. Eller ring 020-120 99 71.</p>
+                <hr class="hr2">
+                <p class="p-tag">Copyright &copy Apple Inc. Alla rättigher förbehålls.</p>
+                
+        <!--Här har vi gjort en div med olika p-klasser för att lägga hr mellan varje och posistionera dem med hjälp av display flex-->
+        <div class="p-container"> 
+            <p class="p1">Integritetspolicy</p>
+            <hr>
+            <p class="p1">Användning av cookies</p>
+            <hr>
+            <p class="p1">Användningsvillkor</p>
+            <hr>
+            <p class="p1">Försäljning och återbetalning</p>
+            <hr>
+            <p class="p1">Juridisk information</p>
+            <hr>
+            <p class="p1">Sajtkarta</p>
+        </div>
+    </div>
+
 </body>
 </html>
